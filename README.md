@@ -1,4 +1,4 @@
-# gqlmdb
+# JobBoard Api Using GraphQL ,MongoDB, and Golang.
 Create a new folder for the Project mkdir gql-yt
 
 Mod init your project, give it whatever name you like go mod init github.com/akhil/gql-yt
