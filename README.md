@@ -1,12 +1,20 @@
 # gqlmdb
 Create a new folder for the Project mkdir gql-yt
+
 Mod init your project, give it whatever name you like go mod init github.com/akhil/gql-yt
+
 Get gql gen for your project go get github.com/99designs/gqlgen
+
 Add gqlgen to tools.go printf '// +build tools\npackage tools\nimport _ "github.com/99designs/gqlgen"' | gofmt > tools.go
+
 Get all the dependencies go mod tidy
+
 Initialize your project go run github.com/99designs/gqlgen init
+
 After you've written the graphql schema, run this - go run github.com/99designs/gqlgen generate
+
 After you've built the project, these are the queries to interact with the API -
+
 Get All Jobs
 query GetAllJobs{ jobs{ _id title description company url } }
 
