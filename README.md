@@ -50,10 +50,10 @@ mutation DeleteQuery($id: ID!) { deleteJobListing(id:$id){ deletedJobId } }
 
 --Start MongoDB.
     ---You can start the mongod process by issuing the following command:
-     
-      ```
-      sudo systemctl start mongod
-      ```
+
+```
+sudo systemctl start mongod
+```
 
 If you receive an error similar to the following when starting mongod:
 
