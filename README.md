@@ -1,22 +1,7 @@
-# JobBoard Api Using GraphQL ,MongoDB, and Golang.
-Create a new folder for the Project mkdir gql-yt
+# JobBoard 
+In this Api we are performing crud operation using Graphql , Mongodb and Golang.
 
-Mod init your project, give it whatever name you like go mod init github.com/akhil/gql-yt
 
-Get gql gen for your project go get github.com/99designs/gqlgen
-
-Add gqlgen to tools.go printf '// +build tools\npackage tools\nimport _ "github.com/99designs/gqlgen"' | gofmt > tools.go
-
-Get all the dependencies go mod tidy
-
-Initialize your project go run github.com/99designs/gqlgen init
-
-After you've written the graphql schema, run this - go run github.com/99designs/gqlgen generate
-
-After you've built the project, these are the queries to interact with the API -
-
-Get All Jobs
-query GetAllJobs{ jobs{ _id title description company url } }
 
 =======================
 
@@ -35,7 +20,7 @@ You can use this input
 ## Get All Jobs
 
 ```
-query GetJobs(){ job(id:$id){ _id title description url company } }
+query GetAllJobs{ jobs{ _id title description company url } }
 ```
 No need input Here
 
